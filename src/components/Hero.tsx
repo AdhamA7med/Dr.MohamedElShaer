@@ -1,5 +1,7 @@
 import React from 'react';
 import { Phone, Calendar, MapPin, ArrowLeft } from 'lucide-react';
+import doctorImage from '../img/mooo.jpg';
+
 
 const Hero = () => {
   return (
@@ -49,11 +51,18 @@ const Hero = () => {
           <div className="relative animate-slide-in-right">
             <div className="relative">
               <div className="w-full h-96 lg:h-[500px] bg-gradient-to-br from-medical-light to-blue-50 rounded-3xl shadow-2xl overflow-hidden">
-                <img
+{/*                 <img
                   src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=800"
                   alt="د. محمد الشاعر - استشاري جراحة العظام"
                   className="w-full h-full object-cover"
-                />
+                /> */}
+
+                <img
+  src={doctorImage}
+  alt="د. محمد الشاعر - استشاري جراحة العظام"
+  className="w-full h-full object-cover"
+/>
+
               </div>
               
               {/* Floating Cards */}
